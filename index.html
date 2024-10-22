@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive mega navigation</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="toggle-bar">
+                <i class="fa-solid fa-bars" id="toggle-bar"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+            <div class="brand-logo">
+                <h2>Bareerah</h2>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+
+                    <!-- Services Mega Menu -->
+                    <li>
+                        <a id="services-link" href="#">Services <i class="fa-solid fa-chevron-down"
+                                id="chevronDwon"></i></a>
+
+                        <div class="mega-menu" id="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="column">
+                                    <h5 class="mega-menu-title">Web Development</h5>
+                                    <a href="#">HTML</a>
+                                    <a href="#">CSS</a>
+                                    <a href="#">JavaScript</a>
+                                </div>
+                                <div class="column">
+                                    <h5 class="mega-menu-title">Mobile Development</h5>
+                                    <a href="#">iOS</a>
+                                    <a href="#">Android</a>
+                                    <a href="#">React Native</a>
+                                </div>
+                                <div class="column">
+                                    <h5 class="mega-menu-title">Data Science</h5>
+                                    <a href="#">Python</a>
+                                    <a href="#">R Programming</a>
+                                    <a href="#">Machine Learning</a>
+                                </div>
+                                <div class="column">
+                                    <h5 class="mega-menu-title">Data Science</h5>
+                                    <a href="#">Python</a>
+                                    <a href="#">R Programming</a>
+                                    <a href="#">Machine Learning</a>
+                                </div>
+                                <div class="column">
+                                    <h5 class="mega-menu-title">Data Science</h5>
+                                    <a href="#">Python</a>
+                                    <a href="#">R Programming</a>
+                                    <a href="#">Machine Learning</a>
+                                </div>
+                                <div class="column">
+                                    <h5 class="mega-menu-title">Data Science</h5>
+                                    <a href="#">Python</a>
+                                    <a href="#">R Programming</a>
+                                    <a href="#">Machine Learning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="right-btn">
+                <button class="signup">Sign Up</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

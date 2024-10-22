@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.toggle-bar {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #042262;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(197, 81, 39);
+    border-radius: 8px;
+}
+
+.right-btn {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.signup {
+    padding: 8px 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.signup:hover {
+    background-color: #c55127;
+    border: 1px solid #c55127;
+    color: white;
+
+}
+
+.mega-menu {
+    width: 500px;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background-color: #042262;
+    padding: 20px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.mega-menu.active {
+    display: block;
+}
+
+.mega-menu-content {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+
+.mega-menu-title {
+    margin-bottom: 8px;
+    color: #eb6f42;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+@media (max-width:768px) {
+    .toggle-bar {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #042262;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+        padding-top: 80px;
+        z-index: 1000;
+        transition: all 0.5s;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .mega-menu-content {
+        grid-template-columns: 12fr;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .mega-menu.active {
+        width: 300px;
+    }
+}
